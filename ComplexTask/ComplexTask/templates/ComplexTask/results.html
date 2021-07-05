@@ -1,0 +1,57 @@
+{% extends "global/Page.html" %}
+{% load otree static %}
+
+{% block head_title %}
+Results
+{% endblock %}
+
+
+{% block title %}
+<center> Results </center>
+{% endblock %}
+
+{% block content %}
+<div class="row">
+    <div class="col-md-12" style="margin: 5px" align="center">
+        <p> <b> The results of the last round are shown below. </b> </p>
+    </div>
+</div>
+</br>
+</br>
+
+
+        <table class="table" style="margin: 5px">
+        <tbody>
+        <tr>
+            <th scope="row"> Number of Correct Answers </th>
+            <td> {{ participant.vars.correctr1 }} </td>
+        </tr>
+        <tr>
+            <th scope="row"> Round 1 Earnings </th>
+            <td> {{ combined_payoff }} </td>
+        </tr>
+        </tbody>
+    </table>
+</br>
+
+<div class="row">
+    <div class="col-md-12" align="right">
+        {% next_button %}
+    </div>
+</div>
+
+{% endblock %}
+
+
+{% block styles %}
+
+<style type="text/css">
+    .boxed {
+        border: 2px solid black ;
+        background-color: #F0F0F0;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+</style>
+
+{% endblock %}

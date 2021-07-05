@@ -1,0 +1,41 @@
+{% extends "global/Page.html" %}
+{% load otree static %}
+
+{% block head_title %}
+Prediction
+{% endblock %}
+
+{% block title %}
+<center> Round 1 Begins </center>
+{% endblock %}
+
+
+{% block content %}
+<p> <b>Round 1</b> will begin on the next screen and will last for <b>3 minutes</b>. </p>
+<p> <b> Once you begin the 3 minute round, you will not be able to pause the task. Please make sure that you are ready before you begin. </b> </p>
+</br>
+</br>
+</br>
+
+<div class="row">
+    <div class="col-md-12" align="center">
+            <button class="nexttab btn-primary btn next" style="background-color: orangered">Begin</button>
+        </div>
+</div>
+
+{% endblock %}
+
+
+
+{% block styles %}
+
+<style type="text/css">
+    .boxed {
+        border: 2px solid black ;
+        background-color: #F0F0F0;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+</style>
+
+{% endblock %}
